@@ -13,7 +13,7 @@ const NavBar = () => {
       {["Malika Sharma", "Download Resume", "Projects", "Contact"].map(
         (item, index) => (
           <a
-            href={index === 1 ? ResumeFile : "/"}
+            href={index === 1 ? ResumeFile : ""}
             download={index === 1}
             key={index}
             onClick={() => {
