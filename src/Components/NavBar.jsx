@@ -12,12 +12,12 @@ const NavBar = () => {
     <div className="nav">
       {["Malika Sharma", "Download Resume", "Projects", "Contact"].map(
         (item, index) => (
-          <a
-            href={index === 1 ? ResumeFile : ""}
-            download={index === 1}
-            key={index}
+          <button
+            // Add or adjust CSS class for button styling
             onClick={() => {
-              if (index === 2) {
+              if (index === 1) {
+                window.open(ResumeFile, "_blank");
+              } else if (index === 2) {
                 scrollToSection("Project_view");
               } else if (index === 3) {
                 scrollToSection("page14");
@@ -25,13 +25,13 @@ const NavBar = () => {
                 scrollToSection("About_view");
               }
             }}
+            key={index}
           >
             {item}
             <span className="line"></span>
-          </a>
+          </button>
         )
       )}
-      {/* <span className="line"></span> */}
     </div>
   );
 };
