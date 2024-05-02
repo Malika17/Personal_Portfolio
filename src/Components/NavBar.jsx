@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeFile from "./resume.pdf"; // Import your resume file
+import ResumeFile from "./Resume.pdf"; // Import your resume file
 
 const NavBar = () => {
   const scrollToSection = (id) => {
