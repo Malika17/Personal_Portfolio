@@ -33,7 +33,7 @@ export const About = () => {
           <br />
           INTERFACES FOR THE WEB.
           <br />
-          <span>"Everyday I learn a little but more"</span>
+          <span>"Everyday I learn a little bit more"</span>
         </h1>
       </div>
       <div className="img_right">

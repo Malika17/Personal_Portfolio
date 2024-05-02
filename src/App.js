@@ -1,21 +1,32 @@
-import logo from "./logo.svg";
+import { useEffect } from "react";
 import { About } from "./Components/About";
 import Projects from "./Components/Projects";
 import LocomotiveScroll from "locomotive-scroll";
 import Skills from "./Components/Skills";
-// import "./portfolio.css";
 import Loader from "./Components/Loader";
 import Contact from "./Components/Contact";
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    const locomotiveScroll = new LocomotiveScroll({
+      el: document.querySelector(".App"),
+      smooth: true,
+      multiplier: 1, // Increase/decrease the scroll speed
+      // Add any other options you need
+    });
+
+    // Destroy Locomotive Scroll instance on unmount
+    return () => {
+      locomotiveScroll.destroy();
+    };
+  }, []);
+
   return (
-    <div className="App">
+    <div className="App" data-scroll-container>
       <Loader />
       <About />
       <Skills />
       <Projects />
-
       <Contact />
     </div>
   );

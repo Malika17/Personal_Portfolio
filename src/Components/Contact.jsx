@@ -13,6 +13,7 @@ const Contact = () => {
           className="contact_info"
           href="https://www.linkedin.com/in/malika-sharma1711/"
           target="_blank"
+          rel="noreferrer"
         >
           <h1>LinkedIn</h1>
         </a>
@@ -25,6 +26,7 @@ const Contact = () => {
           className="contact_info"
           href="https://github.com/Malika17"
           target="_blank"
+          rel="noreferrer"
         >
           <h1>GitHub</h1>
         </a>

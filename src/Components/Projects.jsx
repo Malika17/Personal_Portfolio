@@ -4,7 +4,7 @@ import img1 from "./Images/image.png";
 import img2 from "./Images/p1_2.png";
 import img3 from "./Images/p1_3.png";
 import img4 from "./Images/p1_4.png";
-import img5 from "./Images/p1_5.png";
+
 import p1_cover from "./Images/cover.jpg";
 import ochi from "./ochu_new.png";
 import ochi_1 from "./ochi_1.png";
@@ -18,7 +18,7 @@ import c_3 from "./cyber_img_3.png";
 import c_4 from "./cyber_img_4.png";
 import p4_img1 from "./Images/p4_1.png";
 import p4_img2 from "./Images/p4_2.png";
-import p4_img3 from "./Images/p4_4.png";
+
 import p4_img4 from "./Images/p4_4.png";
 import p4_cover from "./Images/meta.png";
 
@@ -50,6 +50,7 @@ const Projects = () => {
     }
     cardShow();
   });
+
   return (
     <div className="work" id="Project_view">
       <div className="work_Row">
@@ -60,11 +61,12 @@ const Projects = () => {
           <a
             href="https://scintillating-kashata-84dc08.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               data-index="0"
-              //
               src={p1_cover}
+              alt="Project 1 Cover"
               data-scroll
               data-scroll-speed="-0.4"
               data-color="2890f2"
@@ -72,12 +74,16 @@ const Projects = () => {
           </a>
         </div>
         <div className="cnt container2">
-          <a href="https://ochidesignmalika.netlify.app/" target="_blank">
+          <a
+            href="https://ochidesignmalika.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               data-index="1"
-              //
-              data-scroll
               src={ochi}
+              alt="Ochi Design"
+              data-scroll
               data-scroll-speed="0"
               data-color="cdea68"
             ></img>
@@ -86,11 +92,15 @@ const Projects = () => {
       </div>
       <div className="Images_2">
         <div className="cnt container1">
-          <a href="https://cyberfictionnew.netlify.app/" target="_blank">
+          <a
+            href="https://cyberfictionnew.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               data-index="2"
-              //
               src={cyber_img}
+              alt="Cyber Fiction"
               data-scroll
               data-scroll-speed="-0.1"
               data-color="000000"
@@ -98,12 +108,16 @@ const Projects = () => {
           </a>
         </div>
         <div className="cnt container2">
-          <a href="https://metaversenext.netlify.app/" target="_blank">
+          <a
+            href="https://metaversenext.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               data-index="3"
-              //
-              data-scroll
               src={p4_cover}
+              alt="Project 4 Cover"
+              data-scroll
               data-scroll-speed="0"
               data-color="2d0e54"
             ></img>
@@ -117,10 +131,10 @@ const Projects = () => {
             <div className="ccapsule">Take a look</div>
           </div>
           <div className="elem">
-            <img src={img1}></img>
-            <img src={img2}></img>
-            <img src={img3}></img>
-            <img src={img4}></img>
+            <img src={img1} alt=" 1"></img>
+            <img src={img2} alt=" 2"></img>
+            <img src={img3} alt=" 3"></img>
+            <img src={img4} alt=" 4"></img>
           </div>
         </div>
         <div>
@@ -129,10 +143,10 @@ const Projects = () => {
             <div className="ccapsule">Take a look</div>
           </div>
           <div className="elem">
-            <img src={ochi_1}></img>
-            <img src={ochi_2}></img>
-            <img src={ochi_3}></img>
-            <img src={ochi_4}></img>
+            <img src={ochi_1} alt="Ochi 1"></img>
+            <img src={ochi_2} alt="OchiImage 2"></img>
+            <img src={ochi_3} alt="Ochi  3"></img>
+            <img src={ochi_4} alt="Ochi  4"></img>
           </div>
         </div>
         <div>
@@ -141,10 +155,10 @@ const Projects = () => {
             <div className="ccapsule">Take a look</div>
           </div>
           <div className="elem">
-            <img src={c_1}></img>
-            <img src={c_2}></img>
-            <img src={c_3}></img>
-            <img src={c_4}></img>
+            <img src={c_1} alt="Cyber 1"></img>
+            <img src={c_2} alt="Cyber 2"></img>
+            <img src={c_3} alt="Cyber 3"></img>
+            <img src={c_4} alt="Cyber 4"></img>
           </div>
         </div>
         <div>
@@ -153,10 +167,10 @@ const Projects = () => {
             <div className="ccapsule">Take a look</div>
           </div>
           <div className="elem">
-            <img src={p4_img1}></img>
-            <img src={p4_img2}></img>
-            <img src={p4_img1}></img>
-            <img src={p4_img4}></img>
+            <img src={p4_img1} alt="Project 4  1"></img>
+            <img src={p4_img2} alt="Project 4  2"></img>
+            <img src={p4_img1} alt="Project 4  3"></img>
+            <img src={p4_img4} alt="Project 4  4"></img>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./portfolio.css"; // Importing CSS file
-import { useGSAP } from "@gsap/react";
+
 import { gsap } from "gsap";
-import { Expo } from "gsap/all";
+
 import { Circ } from "gsap/all";
-import { Power3 } from "gsap/all";
+
 import NavBar from "./NavBar";
 
 const Loader = () => {
