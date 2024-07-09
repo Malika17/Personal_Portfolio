@@ -1,27 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 export const About = () => {
+  const imageRefs = useRef([]);
+
   useEffect(() => {
-    // Create a GSAP timeline for the animation
-    const tl = gsap.timeline({ delay: 5 }); // Add a slight delay
+    // Initialize GSAP timeline
+    const tl = gsap.timeline({ delay: 5 });
 
-    // Target all `.imgCntr` elements within the `.img_right` div
-    const imageElements = document.querySelectorAll(".img_right .imgCntr");
-
-    // Apply the stagger animation with customized properties
+    // Animation setup
     tl.fromTo(
-      imageElements,
-      { opacity: 0, scale: 0 }, // Start with opacity 0 and scale 0
+      imageRefs.current,
+      { opacity: 0, scale: 0 },
       {
         opacity: 1,
         scale: 1,
-        duration: 1, // Adjust duration as needed
-        stagger: 0.2, // Set stagger duration between images
-        ease: "power3.inOut", // Customize easing if desired
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.inOut",
       }
     );
+
+    // Clean up GSAP animation
+    return () => {
+      tl.kill(); // Kill the timeline to prevent memory leaks
+    };
   }, []);
+
   return (
     <div className="imagery" id="About_view">
       <div className="img_left">
@@ -37,9 +42,18 @@ export const About = () => {
         </h1>
       </div>
       <div className="img_right">
-        <div className="imgCntr"></div>
-        <div className="imgCntr"></div>
-        <div className="imgCntr"></div>
+        <div
+          className="imgCntr"
+          ref={(el) => (imageRefs.current[0] = el)}
+        ></div>
+        <div
+          className="imgCntr"
+          ref={(el) => (imageRefs.current[1] = el)}
+        ></div>
+        <div
+          className="imgCntr"
+          ref={(el) => (imageRefs.current[2] = el)}
+        ></div>
       </div>
     </div>
   );

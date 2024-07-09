@@ -28,13 +28,7 @@ const Loader = () => {
     };
     revealToSpan();
     var tl = gsap.timeline();
-    // tl.to(".child span", {
-    //   x: 0,
-    //   stagger: 0.2,
-    //   ease: Power3.easeInOut,
-    //   duration: 1,
-    //   delay: 1,
-    // });
+
     gsap.fromTo(".child span", { opacity: 0 }, { opacity: 1, duration: 2 });
 
     tl.to(".parent .child", {

@@ -91,6 +91,7 @@ body {
   margin: 0;
   background-color: #8f8a7d;
   border: none;
+  cursor: pointer;
 }
 .nav button .line {
   display: inline-block;
