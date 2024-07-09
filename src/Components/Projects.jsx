@@ -22,6 +22,12 @@ import p4_img2 from "./Images/p4_2.png";
 import p4_img4 from "./Images/p4_4.png";
 import p4_cover from "./Images/meta.png";
 
+import n1 from "./Images/norse_1.png";
+import n2 from "./Images/norse_2.png";
+
+import n3 from "./Images/norse_3.png";
+import n4 from "./Images/norse_4.png";
+
 const Projects = () => {
   useEffect(() => {
     function cardShow() {
@@ -124,6 +130,24 @@ const Projects = () => {
           </a>
         </div>
       </div>
+      <div className="Images_2">
+        <div className="cnt container1">
+          <a
+            href="https://github.com/Malika17/norse-frontend"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              data-index="4"
+              src={n1}
+              alt="Cyber Fiction"
+              data-scroll
+              data-scroll-speed="0"
+              data-color="000000"
+            ></img>
+          </a>
+        </div>
+      </div>
       <div className="cursor">
         <div>
           <div className="crow">
@@ -171,6 +195,18 @@ const Projects = () => {
             <img src={p4_img2} alt="Project 4  2"></img>
             <img src={p4_img1} alt="Project 4  3"></img>
             <img src={p4_img4} alt="Project 4  4"></img>
+          </div>
+        </div>
+        <div>
+          <div className="crow">
+            <div className="ccircle"></div>
+            <div className="ccapsule">Take a look</div>
+          </div>
+          <div className="elem">
+            <img src={n2} alt="Project 4  1"></img>
+            <img src={n1} alt="Project 4  2"></img>
+            <img src={n3} alt="Project 4  3"></img>
+            <img src={n4} alt="Project 4  4"></img>
           </div>
         </div>
       </div>
